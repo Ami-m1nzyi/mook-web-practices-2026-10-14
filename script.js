@@ -27,7 +27,7 @@ if (quiz) {
     for (const question in correct) {
       if (answers.get(question) === correct[question]) score++;
     }
-    document.getElementById('quiz-result').textContent = 'Результат: ' + score + ' из 3. ' + (score === 3 ? 'Отлично, основы усвоены!' : 'Повторите материал: основной контент — main; сетка — display: grid; нажатие — click.');
+    document.getElementById('quiz-result').textContent = 'Результат: ' + score + ' из 3. ' + (score === 3 ? 'Отлично, основы усвоены!' : 'Повторите материал: основной контент – main; сетка – display: grid; нажатие – click.');
   });
   quiz.addEventListener('reset', function () {
     document.getElementById('quiz-result').textContent = '';
@@ -37,6 +37,6 @@ const feedback = document.getElementById('feedback');
 if (feedback) {
   feedback.addEventListener('submit', function (event) {
     event.preventDefault();
-    document.getElementById('feedback-result').textContent = 'Данные корректны. Это учебная форма: сообщение не отправлено.';
+    document.getElementById('feedback-result').textContent = 'Данные корректны. Сообщение не отправлено.';
   });
 }
