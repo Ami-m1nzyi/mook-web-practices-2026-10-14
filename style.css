@@ -1,7 +1,8 @@
+@font-face { font-family: 'Arimo'; src: url('fonts/Arimo-Variable.ttf') format('truetype'); font-style: normal; font-weight: 400 700; font-display: swap; }
 :root { --ink: #24374F; --blue: #5F85BA; --paper: #F6F8FC; --white: #fff; --green: #A9E981; --pink: #E981A9; --sky: #81A9E9; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; font-family: Arial, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.6; }
+body { margin: 0; font-family: 'Arimo', Arial, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.6; }
 h1, h2, h3, p, figure { margin: 0 0 18px; }
 h1, h2, h3 { line-height: 1.15; }
 h1 { font-size: clamp(36px, 5vw, 68px); letter-spacing: -.055em; }
@@ -24,6 +25,7 @@ nav a:hover, nav a[aria-current="page"] { text-decoration: underline; }
 .button.secondary { background: transparent; color: var(--ink); }
 .button.secondary:hover { background: white; }
 .eyebrow { font-size: 12px; font-weight: bold; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 22px; }
+.eyebrow::before { content: ""; display: inline-block; width: 22px; height: 3px; margin-right: 10px; border-radius: 2px; background: var(--green); vertical-align: middle; }
 .hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 56px; padding-block: 70px; }
 .hero h1 span { color: var(--blue); }
 .lead { font-size: 18px; max-width: 550px; }
@@ -38,7 +40,7 @@ figcaption { margin-top: 12px; }
 .card:nth-child(3n + 2) { border-top: 4px solid var(--pink); }
 .card:nth-child(3n) { border-top: 4px solid var(--sky); }
 .card p:last-child { margin-bottom: 0; }
-.number { display: inline-block; color: var(--blue); font-size: 14px; font-weight: bold; margin-bottom: 26px; }
+.number { display: inline-block; color: var(--ink); font-size: 14px; font-weight: bold; margin-bottom: 26px; }
 .band { background: var(--ink); color: white; border-radius: 16px; padding: 42px; margin-block: 44px; border-top: 5px solid var(--pink); }
 .site-footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 18px; padding-block: 28px; border-top: 1px solid #81a9e955; font-size: 14px; }
 .site-footer p { margin: 0; }
